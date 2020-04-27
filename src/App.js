@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Toolbar from './components/Toolbar/Toolbar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
+import Games from './components/Games.js';
+import Streams from './components/Streams.js';
+import GameStream from './components/GamesStreams.js';
+import LiveStream from './components/LiveStreams.js';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
-function App() {
+class App extends Component{
+  state = {
+    sideDrawerOpen: false,
+  };
+
+  drawerToggleClickHandler = () => {
+          this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false })
+  }
+
+  render(){
+    let backdrop;
+
+    if(this.state.sideDrawerOpen){
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+    }
+
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{height: '100%'}}>
+   <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+  <SideDrawer show={this.state.sideDrawerOpen} />
+    {backdrop}
+
+     </div>
+     <Route exact path='/' component={Games}/>
+     <Route exact path='/game/:id' component={GameStream} />
+      <Route exact path='/top-games' component={Games}/>
+      <Route exact path='/top-Streams' component={LiveStream}/>
     </div>
+    </Router>
+
+
   );
+}
 }
 
 export default App;
