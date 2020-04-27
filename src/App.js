@@ -3,9 +3,9 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Games from './components/Games.js';
-import Streams from './components/Streams.js';
 import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
+import ScrollToTop from './scrollToTop.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
@@ -32,7 +32,9 @@ class App extends Component{
     }
 
   return (
+   
     <Router>
+       <ScrollToTop/>
     <div className="App">
     <div style={{height: '100%'}}>
    <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -45,6 +47,7 @@ class App extends Component{
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
     </div>
+    <ScrollToTop/>
     </Router>
 
 

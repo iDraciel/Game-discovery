@@ -19,7 +19,7 @@ const Games=()=>{
                game.box_art_url = newURL;
                return game;
            })
-        setGames (result.data.data);
+        setGames (finalArray);
         };
         fetchData();
     },[]);
@@ -27,9 +27,10 @@ const Games=()=>{
       <h1>Most Popular Games</h1>
       <div className="row">
       {games.map(game =>(
+       
           <div className="column">
               <div className="card">
-              <img className="image" src={game.box_art_url} />
+              <img className="image" alt={game.id} src={game.box_art_url} />
             
                 <h5>{game.name}</h5>
                 <button className="Game-button">
@@ -47,7 +48,7 @@ const Games=()=>{
                 </button>
               </div>
               </div>
-        
+       
         
       ))}
       </div>

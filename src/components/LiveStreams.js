@@ -24,9 +24,10 @@ const LiveStreams=()=>{
         <h1>Most Popular streams</h1>
         <div className="row">
         {streams.map(stream =>(
+         
             <div className="column">
                 <div className="card">
-               <img src={stream.thumbnail_url} className="image"/>
+               <img src={stream.thumbnail_url} key={stream.user_name} className="image"/>
                  <h5>{stream.user_name}</h5>
         <p>{stream.viewer_count}</p>
                  <button className="Game-button">
@@ -38,7 +39,7 @@ const LiveStreams=()=>{
                   </button>
                   </div>
                 </div>
-             
+
 
         ))}
         </div>
