@@ -12,10 +12,10 @@ const LiveStreams=()=>{
           let finalArray = dataArray.map(stream=>{
                let newURL = stream.thumbnail_url 
                .replace('{width}','300')
-               .replace("{height}", "300")
+               .replace("{height}", "200")
                stream.thumbnail_url = newURL;
                return stream;
-           })
+           });
         setStreams (finalArray);
         };
         fetchData();
@@ -24,9 +24,9 @@ const LiveStreams=()=>{
         <h1>Most Popular streams</h1>
         <div className="row">
         {streams.map(stream =>(
-            <div className="column">
+            <div className="column" key={stream.user_name}>
                 <div className="card">
-               <img src={stream.thumbnail_url} className="image"/>
+               <img src={stream.thumbnail_url} alt=""className="image"/>
                  <h5>{stream.user_name}</h5>
         <p>{stream.viewer_count}</p>
                  <button className="Game-button">

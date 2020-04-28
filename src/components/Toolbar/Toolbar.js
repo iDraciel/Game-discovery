@@ -6,10 +6,10 @@ import logo from "../Toolbar/esportsLogo.png";
 
 import './Toolbar.css';
 
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const toolbar = props => (
-    <header className="toolbar"> n
+    <header className="toolbar"> 
         <nav className="toobar-navigation">
             <div className="toolbar__toggle-button">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
@@ -18,8 +18,8 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="toolbar-navigation-items">
                 <ul>
-                    <li> <Link to ="/top-games">Top Games</Link></li>
-                    <li>  <Link to ="/top-streams">Top Streams</Link></li>
+                    <li> <NavLink to ="/top-games">Top Games</NavLink></li>
+                    <li>  <NavLink to ="/top-streams">Top Streams</NavLink></li>
                     <li><a href="/">About Us</a></li>
                 </ul>
             </div>

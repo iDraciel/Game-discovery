@@ -15,7 +15,7 @@ const Games=()=>{
           let finalArray = dataArray.map(game=>{
                let newURL = game.box_art_url 
                .replace('{width}','300')
-               .replace("{height}", "300")
+               .replace("{height}", "200")
                game.box_art_url = newURL;
                return game;
            })
@@ -27,9 +27,9 @@ const Games=()=>{
       <h1>Most Popular Games</h1>
       <div className="row">
       {games.map(game =>(
-          <div className="column">
+          <div className="column" key={game.id}>
               <div className="card">
-              <img className="image" src={game.box_art_url} />
+              <img className="image" alt="" src={game.box_art_url} />
             
                 <h5>{game.name}</h5>
                 <button className="Game-button">

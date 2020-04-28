@@ -3,7 +3,7 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import Games from './components/Games.js';
-import Streams from './components/Streams.js';
+//import Streams from './components/Streams.js';
 import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';

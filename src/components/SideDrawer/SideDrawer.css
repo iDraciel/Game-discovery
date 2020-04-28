@@ -33,9 +33,11 @@
 }
 
 .side-drawer li a:hover,
-.side-drawer a:active{
+.side-drawer a:active,
+.side-drawer a.active{
     color: #00C2FF;
 }
+
 
 @media (min-width: 769px) {
     .side-drawer {
