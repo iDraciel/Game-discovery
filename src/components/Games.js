@@ -28,7 +28,7 @@ const Games=()=>{
       <div className="row">
       {games.map(game =>(
        
-          <div className="column">
+          <div className="column" key={game.id}>
               <div className="card">
               <img className="image" alt={game.id} src={game.box_art_url} />
             

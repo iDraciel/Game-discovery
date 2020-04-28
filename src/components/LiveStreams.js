@@ -25,9 +25,9 @@ const LiveStreams=()=>{
         <div className="row">
         {streams.map(stream =>(
          
-            <div className="column">
+            <div className="column" key={stream.user_name}>
                 <div className="card">
-               <img src={stream.thumbnail_url} key={stream.user_name} className="image"/>
+               <img src={stream.thumbnail_url} alt="" key={stream.user_name} className="image"/>
                  <h5>{stream.user_name}</h5>
         <p>{stream.viewer_count}</p>
                  <button className="Game-button">
