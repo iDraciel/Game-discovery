@@ -37,7 +37,7 @@ const GameStream=({match,location})=>{
                   <a
                     style={{textDecoration:"none"}}
                     href={"https://twitch.tv/" + stream.user_name}
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                      <button className="Game-button">Watch Live</button>
                   </a>

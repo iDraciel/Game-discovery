@@ -16,7 +16,7 @@ const LiveStreams=()=>{
                .replace("{height}", "300")
                stream.thumbnail_url = newURL;
                return stream;
-           })
+           });
         setStreams (finalArray);
         };
         fetchData();
@@ -41,7 +41,7 @@ const LiveStreams=()=>{
                    </div>
                   <a className="button-link" style={{textDecoration:"none"}}
                     href={"https://twitch.tv/" + stream.user_name}
-                    target="_blank"><button className="Game-button" style={{textDecoration:"none"}}>Watch Live
+                    target="_blank" rel="noopener noreferrer"><button className="Game-button" style={{textDecoration:"none"}}>Watch Live
                      </button>            
                     </a>
                   

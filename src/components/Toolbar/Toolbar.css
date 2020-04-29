@@ -43,6 +43,9 @@
 .toolbar-navigation-items a:active{
     color:#00C2FF;
 }
+.toolbar-navigation-items a.active{
+    border-bottom: 3px solid #00C4FF;
+}
 
 
 @media (max-width: 768px) {
