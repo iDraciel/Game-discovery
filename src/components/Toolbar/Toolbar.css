@@ -1,10 +1,10 @@
 .toolbar{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: black;
-    padding:5px;
+    padding:20px;
+   
 }
 
 .toobar-navigation{
@@ -36,12 +36,14 @@
 .toolbar-navigation-items a{
     color: white;
     text-decoration: none;
+    padding:15px 10px;
 }
 
 .toolbar-navigation-items a:hover,
 .toolbar-navigation-items a:active{
     color:#00C2FF;
 }
+
 
 @media (max-width: 768px) {
     .toolbar-navigation-items {

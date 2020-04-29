@@ -1,15 +1,19 @@
 import React,{useState,useEffect} from 'react';
 import api from '../api.js';
 import './Games.css';
+import "bootstrap/dist/css/bootstrap.css";
 import {Link} from 'react-router-dom';
 
 
 const Games=()=>{
     const [games,setGames] =useState([]);
-
+       const mystyle={
+         marginTop:"20px"
+       }
     useEffect(()=>{
         const fetchData = async () => {
             const result = await api.get('https://api.twitch.tv/helix/games/top')
+            
            // console.log(result.data);
            let dataArray = result.data.data
           let finalArray = dataArray.map(game=>{
@@ -25,15 +29,17 @@ const Games=()=>{
     },[]);
     return( <div>
       <h1>Most Popular Games</h1>
+      <div className="live-update">
+        <div className="inner">
+        </div>
+        <h6 className="header-6">Live Updates</h6>
+        </div>
       <div className="row">
       {games.map(game =>(
        
-          <div className="column">
+          <div className="column" key={game.id}>
               <div className="card">
-              <img className="image" alt={game.id} src={game.box_art_url} />
-            
-                <h5>{game.name}</h5>
-                <button className="Game-button">
+              <img className="image" alt={game.box_art_url} src={game.box_art_url} />
                   <Link
                     className="button-link"
                     to={{
@@ -42,10 +48,9 @@ const Games=()=>{
                         gameID: game.id
                       }
                     }}
-                  >
-                    {game.name} {" "}
+                  > <button style={mystyle} className="learn-more">Learn More</button>
                   </Link>
-                </button>
+                
               </div>
               </div>
        

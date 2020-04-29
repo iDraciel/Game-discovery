@@ -390,3 +390,10 @@
 [0427/144440.570:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7fffa77954bf of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0427/144440.570:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7fffabb49f58 of 512 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0427/144440.573:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0428/210807.270:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0428/210807.273:ERROR:exception_snapshot_win.cc(98)] thread ID 11856 not found in process
+[0428/210807.273:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0428/232805.626:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0428/232805.627:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0428/232805.627:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0428/232805.627:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

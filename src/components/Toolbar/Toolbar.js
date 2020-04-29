@@ -5,11 +5,11 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import logo from "../Toolbar/esportsLogo.png";
 
 import './Toolbar.css';
-
+import "bootstrap/dist/css/bootstrap.css";
 import {Link} from 'react-router-dom';
 
 const toolbar = props => (
-    <header className="toolbar"> n
+    <header className="toolbar"> 
         <nav className="toobar-navigation">
             <div className="toolbar__toggle-button">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
@@ -18,9 +18,9 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="toolbar-navigation-items">
                 <ul>
-                    <li> <Link to ="/top-games">Top Games</Link></li>
-                    <li>  <Link to ="/top-streams">Top Streams</Link></li>
-                    <li><a href="/">About Us</a></li>
+                    <li> <Link to ="/top-games" style={{textDecoration:"none"}}>Top Games</Link></li>
+                    <li>  <Link to ="/top-streams" style={{textDecoration:"none"}}>Top Streams</Link></li>
+                    <li><Link to="/about-us" style={{textDecoration:"none"}}>About US</Link></li>
                 </ul>
             </div>
         </nav>

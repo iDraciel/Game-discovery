@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
-import './Games.css';
+import './LiveStreams.css';
+import "bootstrap/dist/css/bootstrap.css";
 import api from '../api.js';
 
 const GameStream=({match,location})=>{
@@ -25,22 +26,22 @@ const GameStream=({match,location})=>{
             <div className="row">
             {streamData.map(stream => (
             
-            <div className="column">
+            <div className="column" key={stream.id}>
                 <div className="card">
-              <img className="image" key={stream.id} src={stream.thumbnail_url} />
+              <img className="image" alt="" src={stream.thumbnail_url} />
                 <h5>{stream.user_name}</h5>
-                <p>
-                  {stream.viewer_count} live viewers
-                </p>
-                <button className="button-link">
+                <div className="live-viewers">
+                 <button className="pulse-button"/>
+                 <p style={{marginTop:"-7px",marginLeft:"6px"}}>{stream.viewer_count}</p>
+                   </div>
                   <a
                     style={{textDecoration:"none"}}
                     href={"https://twitch.tv/" + stream.user_name}
                     target="_blank"
                   >
-                    Visit
+                     <button className="Game-button">Watch Live</button>
                   </a>
-                </button>
+              
               </div>
             </div>
         

@@ -6,6 +6,7 @@ import Games from './components/Games.js';
 import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
 import ScrollToTop from './scrollToTop.js';
+import AboutUs from './components/About/AboutUs.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
@@ -26,15 +27,13 @@ class App extends Component{
 
   render(){
     let backdrop;
-
     if(this.state.sideDrawerOpen){
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
-
   return (
    
     <Router>
-       <ScrollToTop/>
+       <ScrollToTop>
     <div className="App">
     <div style={{height: '100%'}}>
    <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
@@ -42,12 +41,14 @@ class App extends Component{
     {backdrop}
 
      </div>
+    
      <Route exact path='/' component={Games}/>
      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
+      <Route exact path='/about-us' component={AboutUs} />
     </div>
-    <ScrollToTop/>
+    </ScrollToTop>
     </Router>
 
 

@@ -4,13 +4,14 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
- 
+     overflow-x: hidden;
   }
   
   h1{
       font-weight: 500;
       margin-top: 100px;
       margin-bottom: 25px;
+      color:white;
   }
   /* Float four columns side by side */
   .column {
@@ -45,6 +46,14 @@
     text-align: center;
     background-color: #f1f1f1;
     margin:8px 5px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  .card:hover {
+    transform: scale(1.03);
   }
   .image{
       width:100%;
@@ -58,4 +67,25 @@
     width:300px;
     height:300px;
     text-decoration: none;
+  }
+
+
+  .learn-more{
+    background-color: #e84c3d; 
+    border: none;
+    color: white;
+    
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  
+  }
+  .learn-more:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }

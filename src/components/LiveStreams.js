@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import api from '../api.js';
 import './LiveStreams.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 const LiveStreams=()=>{
     const [streams,setStreams] =useState([]);
@@ -22,21 +23,28 @@ const LiveStreams=()=>{
     },[]);
     return( <div>
         <h1>Most Popular streams</h1>
+        <div className="live-update">
+        <div className="inner">
+        </div>
+        <h6 className="header-6">Live Updates</h6>
+        </div>
         <div className="row">
         {streams.map(stream =>(
          
-            <div className="column">
+            <div className="column" key={stream.id}>
                 <div className="card">
-               <img src={stream.thumbnail_url} key={stream.user_name} className="image"/>
+               <img src={stream.thumbnail_url} alt="" className="image"/>
                  <h5>{stream.user_name}</h5>
-        <p>{stream.viewer_count}</p>
-                 <button className="Game-button">
-                  <a className="button-link"
+                 <div className="live-viewers">
+                 <button className="pulse-button"/>
+                 <p style={{marginTop:"-7px",marginLeft:"6px"}}>{stream.viewer_count}</p>
+                   </div>
+                  <a className="button-link" style={{textDecoration:"none"}}
                     href={"https://twitch.tv/" + stream.user_name}
-                    target="_blank">Watch Live
-                                 
+                    target="_blank"><button className="Game-button" style={{textDecoration:"none"}}>Watch Live
+                     </button>            
                     </a>
-                  </button>
+                  
                   </div>
                 </div>
 

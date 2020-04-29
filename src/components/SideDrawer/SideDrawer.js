@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './SideDrawer.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 const sideDrawer = props => {
     // eslint-disable-next-line
@@ -14,7 +15,7 @@ const sideDrawer = props => {
         <ul>
         <li> <Link to ="/top-games">Top Games</Link></li>
           <li>  <Link to ="/top-streams">Top Streams</Link></li>
-            <li><a href="/">About Us</a></li>
+            <li><Link to="/about-us">About Us</Link></li>
         </ul>
     </nav>
   );
