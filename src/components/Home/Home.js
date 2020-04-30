@@ -37,7 +37,7 @@ class Home extends Component{
             </Slider>
               <h3 style={{color:'white',marginTop:'40px',textAlign:'center'}}>Some description about website or Any other Generic info/data</h3>
             </div>
-        )
+        );
     }
 }
 
