@@ -1,10 +1,10 @@
 import React from 'react';
-
+import {Helmet} from "react-helmet";
 import './AboutUs.css';
 import profilepic from '../About/dp-pastel-clipped.png';
 
-const aboutUs = () => (
-
+const aboutUs = () => (<div>
+    <Helmet><title>About Us</title></Helmet>
     <body className="wrapper">
         <div className="row">
             <div className="columns">
@@ -33,6 +33,7 @@ const aboutUs = () => (
             </div>
         </div>
     </body>
+    </div>
 );
 
 export default aboutUs;

@@ -7,14 +7,13 @@ import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
 import ScrollToTop from './scrollToTop.js';
 import AboutUs from './components/About/AboutUs.js';
+import HomeComp from './HomeComp.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
-
 class App extends Component{
   state = {
     sideDrawerOpen: false,
-  };
-
+  }
   drawerToggleClickHandler = () => {
           this.setState((prevState) => {
       return {sideDrawerOpen: !prevState.sideDrawerOpen};
@@ -41,8 +40,8 @@ class App extends Component{
     {backdrop}
 
      </div>
-    
-     <Route exact path='/' component={Games}/>
+     
+     <Route exact path='/' component={HomeComp}/>
      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>

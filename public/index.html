@@ -16,6 +16,7 @@
     -->
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <!--
 
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -31,6 +32,34 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="overlay">
+      <h1 class="intro">Game Discovery</h1>
+  </div>
+  <div class="overlay-2">
+      <h1 class="intro">Game Discovery</h1>
+  </div>
+  <div class="overlay-3">
+      <h1 class="intro">Game Discovery</h1>
+  </div> 
+  <script>
+      gsap.to(".overlay", 2, {
+          delay: 3,
+          top: "-100%",
+          ease: Expo.easeInOut,
+      });
+
+      gsap.to(".overlay-2", 2, {
+          delay: 2,
+          top: "-100%",
+          ease: Expo.easeInOut,
+      });
+
+      gsap.to(".overlay-3", 2, {
+          delay: 1,
+          top: "-100%",
+          ease: Expo.easeInOut,
+      });
+  </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -41,5 +70,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
   </body>
 </html>

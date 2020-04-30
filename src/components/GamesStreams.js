@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import './LiveStreams.css';
 import "bootstrap/dist/css/bootstrap.css";
 import api from '../api.js';
+import {Helmet} from "react-helmet";
 
 const GameStream=({match,location})=>{
     const [streamData, setStreamData] = useState([]);
@@ -21,8 +22,10 @@ const GameStream=({match,location})=>{
         setStreamData(finalArray);
       };
       fetchData();
-    }, []);
+    },);
     return( <div>
+      <Helmet><title>{match.params.id}</title></Helmet>
+      <h1>{match.params.id} Streams</h1>
             <div className="row">
             {streamData.map(stream => (
             

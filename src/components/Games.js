@@ -3,7 +3,7 @@ import api from '../api.js';
 import './Games.css';
 import "bootstrap/dist/css/bootstrap.css";
 import {Link} from 'react-router-dom';
-
+import {Helmet} from "react-helmet";
 
 const Games=()=>{
     const [games,setGames] =useState([]);
@@ -28,6 +28,7 @@ const Games=()=>{
         fetchData();
     },[]);
     return( <div>
+    <Helmet><title>Top Games</title></Helmet>
       <h1>Most Popular Games</h1>
       <div className="live-update">
         <div className="inner">
