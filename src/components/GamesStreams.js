@@ -21,7 +21,7 @@ const GameStream=({match,location})=>{
         setStreamData(finalArray);
       };
       fetchData();
-    }, []);
+    }, [location.state.gameID]);
     return( <div>
             <div className="row">
             {streamData.map(stream => (

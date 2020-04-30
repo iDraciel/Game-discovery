@@ -7,6 +7,7 @@ import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
 import ScrollToTop from './scrollToTop.js';
 import AboutUs from './components/About/AboutUs.js';
+import Home from './components/Home/Home';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
@@ -42,7 +43,7 @@ class App extends Component{
 
      </div>
     
-     <Route exact path='/' component={Games}/>
+     <Route exact path='/'  component={Home}/>
      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
