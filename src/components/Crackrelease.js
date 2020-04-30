@@ -20,7 +20,7 @@ class Crackrelease extends Component {
         return (
           <React.Fragment>
               <h1>Upcoming AAA Games</h1>
-              <div className="live-update">
+                <div className="live-update">
         <div className="inner">
         </div>
         <h6 className="header-6">Live Updates</h6>
