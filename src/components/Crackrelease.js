@@ -9,7 +9,7 @@ class Crackrelease extends Component {
       fetchUsers() {
         axios.get(`https://cors-anywhere.herokuapp.com/https://api.crackwatch.com/api/games?page=1&is_released=false&is_aaa=true`)
           .then(response =>{
-            this.setState({users: response.data.slice(0,12)}) 
+            this.setState({users: response.data}) 
         });     
       }
       componentDidMount() {
