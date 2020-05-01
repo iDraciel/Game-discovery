@@ -10,6 +10,7 @@ import AboutUs from './components/About/AboutUs.js';
 import HomeComp from './HomeComp.js';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
+import Crackrelease from './components/Crackrelease';
 class App extends Component{
   state = {
     sideDrawerOpen: false,
@@ -42,6 +43,7 @@ class App extends Component{
      </div>
      
      <Route exact path='/' component={HomeComp}/>
+     <Route exact path='/upcoming' component={Crackrelease}/>
      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
