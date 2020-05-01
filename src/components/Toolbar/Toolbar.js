@@ -18,7 +18,7 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="toolbar-navigation-items">
                 <ul>
-                    <li> <Link to ="/top-games" style={{textDecoration:"none"}}>Top Games</Link></li>
+                    <li> <Link to ="/top-games" style={{textDecoration:"none"}}>Popular Games</Link></li>
                     <li>  <Link to ="/top-streams" style={{textDecoration:"none"}}>Top Streams</Link></li>
                     <li><Link to="/upcoming"style={{textDecoration:"none"}}>Upcoming Games</Link></li>
                     <li><Link to="/about-us" style={{textDecoration:"none"}}>About US</Link></li>

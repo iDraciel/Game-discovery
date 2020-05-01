@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import './Games.css';
 import axios from 'axios';
+import {Helmet} from "react-helmet";
 class Crackrelease extends Component {
     state = {
         users: []
@@ -18,6 +19,8 @@ class Crackrelease extends Component {
       render() {
         const { users } = this.state;
         return (
+          <div>
+             <Helmet><title>Upcoming Games</title></Helmet>
           <React.Fragment>
               <h1>Upcoming AAA Games</h1>
                 <div className="live-update">
@@ -40,7 +43,7 @@ class Crackrelease extends Component {
               })}
               </div>
           </React.Fragment>
-          
+          </div>
         ); 
   }
 

@@ -28,7 +28,7 @@ const Games=()=>{
         fetchData();
     },[]);
     return( <div>
-    <Helmet><title>Top Games</title></Helmet>
+    <Helmet><title>Popular Games</title></Helmet>
       <h1>Most Popular Games</h1>
       <div className="live-update">
         <div className="inner">
