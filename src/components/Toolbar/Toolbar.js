@@ -20,7 +20,7 @@ const toolbar = props => (
                 <ul>
                     <li> <Link to ="/top-games" style={{textDecoration:"none"}}>Top Games</Link></li>
                     <li>  <Link to ="/top-streams" style={{textDecoration:"none"}}>Top Streams</Link></li>
-                    <li><Link to="/about-us" style={{textDecoration:"none"}}>About US</Link></li>
+                    <li><Link to="/about-us" style={{textDecoration:"none"}}>About Us</Link></li>
                 </ul>
             </div>
         </nav>
