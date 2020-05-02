@@ -48,7 +48,7 @@ class TopOrdered extends Component {
                          <div className="column" key={name}>
                       <div className="card">
                         <img src={image} className="image" style={{width:"300",height:"300"}} alt={name} />
-                        <p>{name}</p>
+                        <h6 style={{marginTop:"15px"}}>{name}</h6>
                       <hr />
                       </div>
                     </div>

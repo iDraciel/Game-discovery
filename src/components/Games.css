@@ -30,18 +30,13 @@
     display: table;
     clear: both;
   }
-  @media screen and (min-width:300px) and (max-width:450px){
+ 
+  @media screen and (min-width:300px) and (max-width:768px){
     h1{
-      font-size: 15px;
-      margin-top: -5px;
-    }
-  }
-  @media screen and (min-width:451px) and (max-width:768px){
-    h1{
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
         font-weight: 300;
-        margin-top: -8px;
+        margin-top: -10px;
     
        
     }
@@ -59,7 +54,7 @@
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 8px;
     text-align: center;
     background-color: #f1f1f1;
     margin:8px 5px;
