@@ -3,8 +3,10 @@ import axios from 'axios'
 
 let api = axios.create({
  headers:  {
-     'Client-ID': 'vozsmfvwspvelkmffqnoz0ackzvhwn',
-     'accept': 'application/vnd.twitchtv.v5+json'
+     
+     'accept': 'application/vnd.twitchtv.v5+json',
+    'Authorization' :'Bearer juo7kui3bff2s4lmvdpgps0ofx0ag1'
+     
  },
    
 })

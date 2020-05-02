@@ -5,6 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> trial
     <App />,
   document.getElementById('root')
 );

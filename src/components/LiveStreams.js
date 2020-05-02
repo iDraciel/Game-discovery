@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import api from '../api.js';
 import './LiveStreams.css';
 import "bootstrap/dist/css/bootstrap.css";
-
+import {Helmet} from "react-helmet";
 const LiveStreams=()=>{
     const [streams,setStreams] =useState([]);
     useEffect(()=>{
@@ -22,6 +22,7 @@ const LiveStreams=()=>{
         fetchData();
     },[]);
     return( <div>
+      <Helmet><title>Top Streams</title></Helmet>
         <h1>Most Popular streams</h1>
         <div className="live-update">
         <div className="inner">

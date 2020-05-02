@@ -13,8 +13,9 @@ const sideDrawer = props => {
   return(
     <nav className={drawerClasses}>
         <ul>
-        <li> <Link to ="/top-games">Top Games</Link></li>
+        <li> <Link to ="/top-games">Popular Games</Link></li>
           <li>  <Link to ="/top-streams">Top Streams</Link></li>
+          <li>  <Link to ="/upcoming">Upcoming Games</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
         </ul>
     </nav>

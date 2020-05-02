@@ -1,9 +1,14 @@
 .toolbar{
+
     top: 0;
     left: 0;
     width: 100%;
     background: black;
+<<<<<<< HEAD
     padding: 10px;
+=======
+    padding:10px;
+>>>>>>> trial
    
 }
 
