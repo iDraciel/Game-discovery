@@ -34,8 +34,8 @@ class Home extends Component{
                <div className="slide">
                  <img style={{width:"100%",height:'100%'}} src="https://icdn2.digitaltrends.com/image/best-mac-games-fortnite-500x500.jpg"  alt="slide2"/>
                </div>
-            </Slider>
-              <h3 style={{color:'white',marginTop:'40px',textAlign:'center'}}>Some description about website or Any other Generic info/data</h3>
+        </Slider> 
+          
             </div>
         );
     }

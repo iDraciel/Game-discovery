@@ -42,6 +42,7 @@
 .toolbar-navigation-items a:hover,
 .toolbar-navigation-items a:active{
     color:#00C2FF;
+    text-decoration: none;
 }
 .toolbar-navigation-items a.active{
     border-bottom: 3px solid #00C4FF;

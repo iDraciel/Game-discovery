@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 
 const Games=()=>{
     const [games,setGames] =useState([]);
+    //const [loading,setLoading] = useState(false);
        const mystyle={
          marginTop:"20px"
        }
