@@ -24,7 +24,7 @@ code {
 .intro {
  position: absolute;
  top:50%;
- left:35%;
+ left:36%;
  transform: (-50%,50%);
   text-align: center;
   color: #fff;
@@ -82,7 +82,7 @@ code {
   }
   .intro{
     position: absolute;
-    left:30%;
+    left:34%;
     font-size: 22px;
   }
 }

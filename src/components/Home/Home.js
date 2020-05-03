@@ -2,9 +2,9 @@ import React,{Component} from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import CSGO from '../images/ESL-CS.jpg';
-import ESL from '../images/ESL.jpg';
-import DOTA from '../images/ESL-DOTA.jpg';
+import JS4 from '../images/JS4.jpg';
+import Creed from '../images/Creed.jpg';
+import Batl from '../images/Batl.jpg';
 import './Home.css';
 class Home extends Component{
     
@@ -24,20 +24,20 @@ class Home extends Component{
             <div>
             <Slider {...settings}>
                <div className="slide">
-                 <a href="https://www.twitch.tv/esl" target="_blank"rel="noopener noreferrer">
-                 <img style={{width:"100%",height:"auto"}} src={ESL} alt="slide1"/>
-                 </a>
+                 
+                 <img style={{width:"100%",height:"auto"}} src={JS4} alt="slide1"/>
+                 
                </div>
                <div className="slide">
-                 <a href="https://www.youtube.com/channel/UCaYLBJfw6d8XqmNlL204lNg" target="_blank" rel="noopener noreferrer">
+                
                <img style={{width:"100%",height:"auto"}} 
-               src={DOTA} alt="slide2"/>
-               </a>
+               src={Batl} alt="slide2"/>
+               
                </div>
                <div className="slide">
-               <a href="https://www.youtube.com/channel/UCPq2ETz4aAGo2Z-8JisDPIA" target="_blank" rel="noopener noreferrer">
-                 <img style={{width:"100%",height:'auto'}} src={CSGO}  alt="slide3"/>
-                 </a>
+               
+                 <img style={{width:"100%",height:'auto'}} src={Creed}  alt="slide3"/>
+             
                </div>
             </Slider>
              
