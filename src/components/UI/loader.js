@@ -28,7 +28,7 @@ const loader = () => {
     );
 */
     return (
-        <div class="lds-loader"><div></div><div></div><div></div></div>
+        <div className="lds-loader"><div></div><div></div><div></div></div>
     );
 }
 
