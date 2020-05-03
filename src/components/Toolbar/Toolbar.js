@@ -6,7 +6,7 @@ import logo from "../Toolbar/esportsLogo.png";
 
 import './Toolbar.css';
 import "bootstrap/dist/css/bootstrap.css";
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const toolbar = props => (
     <header className="toolbar"> 
@@ -18,10 +18,11 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="toolbar-navigation-items">
                 <ul>
-                    <li> <Link to ="/top-games" style={{textDecoration:"none"}}>Popular Games</Link></li>
-                    <li>  <Link to ="/top-streams" style={{textDecoration:"none"}}>Top Streams</Link></li>
-                    <li><Link to="/upcoming"style={{textDecoration:"none"}}>Upcoming Games</Link></li>
-                    <li><Link to="/about-us" style={{textDecoration:"none"}}>About US</Link></li>
+                <li> <NavLink to ="/top-games" >Popular Games</NavLink></li>
+                <li>  <NavLink to ="/upcoming" >Upcoming Games</NavLink></li>
+                    <li>  <NavLink to ="/top-streams" >Top Streams</NavLink></li>
+                    <li><NavLink to="/about-us" >About US</NavLink></li>
+                   
                 </ul>
             </div>
         </nav>

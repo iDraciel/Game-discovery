@@ -2,9 +2,8 @@ import React,{Component} from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import './Games.css';
 import axios from 'axios';
-import {Helmet} from "react-helmet";
 
-class Crackwatch extends Component {
+class Latestrelease extends Component {
     state = {
         users: [],
       
@@ -12,18 +11,17 @@ class Crackwatch extends Component {
     
       getUsers() {
         axios
-          .get(`https://api.rawg.io/api/games?dates=2020-05-05,2021-12-31`)
+          .get(`https://api.rawg.io/api/games?dates=2020-04-01,2020-04-30&platforms=18,1,7`)
           .then(response =>
             response.data.results.map(user => ({
               name: `${user.name}`,
               image: `${user.background_image}`,
-             date:`${user.released}`
-            
+              date:`${user.released}`
             }))
           )
           .then(users => {
             this.setState({
-              users:users.slice(0,10),
+              users:users.slice(0,8),
           
             });
           })
@@ -35,10 +33,9 @@ class Crackwatch extends Component {
     
       render() {
         const { users } = this.state;
-        return (<div>
-          <Helmet><title>Upcoming Games</title></Helmet>
+        return (
           <React.Fragment>
-            <h1>Upcoming Games</h1>
+            <h1>Latest Released Games</h1>
             
             <div className="live-update">
         <div className="inner">
@@ -53,18 +50,15 @@ class Crackwatch extends Component {
                       <div className="card">
                         <img src={image} className="image" style={{width:"300",height:"300"}} alt={name} />
                         <h6 style={{marginTop:"15px"}}>{name}</h6>
-                        <p>{date}</p>
-                        
-                     
+                  <p>{date}</p>
                       </div>
                     </div>
                   );
                 })}
             </div>
           </React.Fragment>
-          </div>
         );
       }
     
 }
-export default Crackwatch;
+export default Latestrelease;

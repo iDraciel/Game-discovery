@@ -1,5 +1,4 @@
 .toolbar{
-
     top: 0;
     left: 0;
     width: 100%;
@@ -41,10 +40,11 @@
 
 .toolbar-navigation-items a:hover,
 .toolbar-navigation-items a:active{
-    color:#00C2FF;
+    color:#e84c3d;
+    text-decoration:none ;
 }
 .toolbar-navigation-items a.active{
-    border-bottom: 3px solid #00C4FF;
+    border-bottom: 3px solid #e84c3d;
 }
 
 

@@ -8,9 +8,10 @@ import LiveStream from './components/LiveStreams.js';
 import ScrollToTop from './scrollToTop.js';
 import AboutUs from './components/About/AboutUs.js';
 import HomeComp from './HomeComp.js';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import ErrorPage from './404.js';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import './App.css';
-import Crackrelease from './components/Crackrelease';
+import Crackwatch from './components/Crackwatch.';
 class App extends Component{
   state = {
     sideDrawerOpen: false,
@@ -39,15 +40,16 @@ class App extends Component{
    <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
   <SideDrawer show={this.state.sideDrawerOpen} />
     {backdrop}
-
      </div>
-     
+     <Switch>
      <Route exact path='/' component={HomeComp}/>
-     <Route exact path='/upcoming' component={Crackrelease}/>
+     <Route exact path='/upcoming' component={Crackwatch}/>
      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/top-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
+      <Route path="*" component={ErrorPage} />
+      </Switch>         
     </div>
     </ScrollToTop>
     </Router>
