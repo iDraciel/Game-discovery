@@ -6,6 +6,11 @@
     left: 49%;
     top:50%;
   }
+  @media screen and (max-width:768px){
+    .lds-loader{
+      left:42%;
+    }
+  }
   .lds-loader div {
     display: inline-block;
     position: absolute;
