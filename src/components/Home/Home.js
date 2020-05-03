@@ -25,18 +25,18 @@ class Home extends Component{
             <Slider {...settings}>
                <div className="slide">
                  
-                 <img style={{width:"100%",height:"auto"}} src={JS4} alt="slide1"/>
+                 <img className="slide-image" src={JS4} alt="slide1"/>
                  
                </div>
                <div className="slide">
                 
-               <img style={{width:"100%",height:"auto"}} 
+               <img className="slide-image" 
                src={Batl} alt="slide2"/>
                
                </div>
                <div className="slide">
                
-                 <img style={{width:"100%",height:'auto'}} src={Creed}  alt="slide3"/>
+                 <img className="slide-image"  src={Creed}  alt="slide3"/>
              
                </div>
             </Slider>

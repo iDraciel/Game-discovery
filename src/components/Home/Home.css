@@ -4,3 +4,13 @@
     color:white;
     text-align: center;
 }
+
+.slide-image{
+    width:100%;
+    height:auto;
+}
+@media screen and (max-width:768px){
+    .slide-image{
+        height:130px;
+    }
+}

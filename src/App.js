@@ -43,9 +43,10 @@ class App extends Component{
      </div>
      <Switch>
      <Route exact path='/' component={HomeComp}/>
+     <Route path='/Home' component={HomeComp}/>
      <Route exact path='/upcoming' component={Crackwatch}/>
      <Route exact path='/game/:id' component={GameStream} />
-      <Route exact path='/top-games' component={Games}/>
+      <Route exact path='/Popular-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
       <Route path="*" component={ErrorPage} />

@@ -4,6 +4,7 @@ import TopOrdered from './components/TopOrdered.js';
 import {Helmet} from "react-helmet";
 import Latestrelease from './components/Latestrelease';
 const HomeComp =()=>{
+  
     return(
         <div>
 
