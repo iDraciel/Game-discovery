@@ -49,7 +49,7 @@ class Latestrelease extends Component {
                          <div className="column" key={name}>
                       <div className="card">
                         <img src={image} className="image" style={{width:"300",height:"300"}} alt={name} />
-                        <h6 style={{marginTop:"15px"}}>{name}</h6>
+                        <h6 style={{marginTop:"15px",textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap"}}>{name}</h6>
                   <p>{date}</p>
                       </div>
                     </div>
