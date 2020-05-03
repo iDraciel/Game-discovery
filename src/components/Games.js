@@ -4,14 +4,17 @@ import './Games.css';
 import "bootstrap/dist/css/bootstrap.css";
 import {Link} from 'react-router-dom';
 import {Helmet} from "react-helmet";
+import Loader from './UI/loader';
 
 const Games=()=>{
     const [games,setGames] =useState([]);
+    const [loading,setLoading] = useState(false);
        const mystyle={
          marginTop:"20px"
        }
     useEffect(()=>{
         const fetchData = async () => {
+            setLoading(true);
             const result = await api.get('https://api.twitch.tv/helix/games/top')
             
            // console.log(result.data);
@@ -24,10 +27,13 @@ const Games=()=>{
                return game;
            })
         setGames (finalArray);
+        setLoading(false);
+        
         };
         fetchData();
     },[]);
     return( <div>
+    {loading?<Loader/>:<React.Fragment>
     <Helmet><title>Popular Games</title></Helmet>
       <h1>Most Popular Games</h1>
       <div className="live-update">
@@ -58,6 +64,7 @@ const Games=()=>{
         
       ))}
       </div>
+      </React.Fragment>}
     </div>
     );
 

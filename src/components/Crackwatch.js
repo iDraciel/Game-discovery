@@ -3,28 +3,33 @@ import "bootstrap/dist/css/bootstrap.css";
 import './Games.css';
 import axios from 'axios';
 import {Helmet} from "react-helmet";
+import Loader from './UI/loader';
 
 class Crackwatch extends Component {
     state = {
         users: [],
-      
+        loading:false
       };
     
       getUsers() {
+        this.setState({loading:true});
         axios
           .get(`https://api.rawg.io/api/games?dates=2020-05-05,2021-12-31`)
-          .then(response =>
-            response.data.results.map(user => ({
+          .then(response =>{
+             
+           return response.data.results.map(user => ({
               name: `${user.name}`,
               image: `${user.background_image}`,
              date:`${user.released}`
             
-            }))
+            }));
+          }
           )
           .then(users => {
+            
             this.setState({
               users:users.slice(0,10),
-          
+               loading:false
             });
           })
       }
@@ -35,7 +40,8 @@ class Crackwatch extends Component {
     
       render() {
         const { users } = this.state;
-        return (<div>
+        let content =(
+          <div>
           <Helmet><title>Upcoming Games</title></Helmet>
           <React.Fragment>
             <h1>Upcoming Games</h1>
@@ -63,6 +69,12 @@ class Crackwatch extends Component {
             </div>
           </React.Fragment>
           </div>
+        
+        );
+        return (  <div>
+                    {this.state.loading?<Loader/>:content}
+                 </div>
+                  
         );
       }
     

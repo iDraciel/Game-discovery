@@ -11,7 +11,7 @@ import HomeComp from './HomeComp.js';
 import ErrorPage from './404.js';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import './App.css';
-import Crackwatch from './components/Crackwatch.';
+import Crackwatch from './components/Crackwatch';
 class App extends Component{
   state = {
     sideDrawerOpen: false,

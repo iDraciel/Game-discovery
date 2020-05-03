@@ -3,10 +3,13 @@ import api from '../api.js';
 import './LiveStreams.css';
 import "bootstrap/dist/css/bootstrap.css";
 import {Helmet} from "react-helmet";
+import Loader from './UI/loader';
 const LiveStreams=()=>{
     const [streams,setStreams] =useState([]);
+    const [loading,setLoading] = useState(false);
     useEffect(()=>{
         const fetchData = async () => {
+            setLoading(true);
             const result = await api.get('https://api.twitch.tv/helix/streams')
            // console.log(result.data);
            let dataArray = result.data.data
@@ -18,10 +21,14 @@ const LiveStreams=()=>{
                return stream;
            });
         setStreams (finalArray);
+        setLoading(false);
         };
         fetchData();
     },[]);
-    return( <div>
+    return( 
+    <div>
+      {loading?<Loader/>:
+      <React.Fragment>
       <Helmet><title>Top Streams</title></Helmet>
         <h1>Most Popular streams</h1>
         <div className="live-update">
@@ -52,6 +59,7 @@ const LiveStreams=()=>{
 
         ))}
         </div>
+        </React.Fragment>}
       </div>
       );
   

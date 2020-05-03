@@ -1,12 +1,12 @@
 import React from 'react';
-import FadeIn from "react-fade-in";
-import Lottie from "react-lottie";
+//import FadeIn from "react-fade-in";
+//import Lottie from "react-lottie";
 import "bootstrap/dist/css/bootstrap.css";
-import * as FetchingLoader from '../../goFetch.json';
+//import * as FetchingLoader from '../../goFetch.json';
+import './loader.css';
 
-
-const loader = (props) => {
-    const defaultOptions = {
+const loader = () => {
+   /* const defaultOptions = {
         loop: true,
         autoplay: true,
         animationData: FetchingLoader.default,
@@ -15,18 +15,20 @@ const loader = (props) => {
         }
 
     }
+
     let content = (
-        <FadeIn>
-            <div style={{ display: 'flex',flexDirection:'column',justifyContent: 'center', alignItems: 'center' ,marginTop:'100px'}}>
-                <h2>Please wait Fetching  Data</h2>
-                <Lottie options={defaultOptions} height={200} width={200} />
-            </div>
-        </FadeIn>
-    );
-    return (
-        <div>
-           {content}
+         <div>
+            <FadeIn>
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginTop: '100px' }}>
+                    <h2>Please wait Fetching  Data</h2>
+                    <Lottie options={defaultOptions} height={200} width={200} />
+                </div>
+            </FadeIn>
         </div>
+    );
+*/
+    return (
+        <div class="lds-loader"><div></div><div></div><div></div></div>
     );
 }
 
