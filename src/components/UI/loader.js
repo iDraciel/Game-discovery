@@ -1,12 +1,9 @@
 import React from 'react';
-//import FadeIn from "react-fade-in";
-//import Lottie from "react-lottie";
 import "bootstrap/dist/css/bootstrap.css";
-//import * as FetchingLoader from '../../goFetch.json';
 import './loader.css';
 
 const loader = () => {
-   /* const defaultOptions = {
+   /*+ const defaultOptions = {
         loop: true,
         autoplay: true,
         animationData: FetchingLoader.default,
