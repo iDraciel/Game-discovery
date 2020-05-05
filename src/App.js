@@ -11,6 +11,7 @@ import HomeComp from './HomeComp.js';
 import ErrorPage from './404.js';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import './App.css';
+import GamePage from './components/GamePage/GamePage';
 import Crackwatch from './components/Crackwatch';
 
 class App extends Component{
@@ -50,6 +51,7 @@ class App extends Component{
       <Route exact path='/Popular-games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
+      <Route exact path='/games/:id' component={GamePage}/>
       <Route path="*" component={ErrorPage} />
       </Switch>         
     </div>

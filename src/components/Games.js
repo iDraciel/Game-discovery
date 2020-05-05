@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import api from '../api.js';
 import './Games.css';
 import "bootstrap/dist/css/bootstrap.css";
-import {Link} from 'react-router-dom';
+import {Link,Redirect} from 'react-router-dom';
 import {Helmet} from "react-helmet";
 import Loader from './UI/loader';
 
@@ -32,6 +32,9 @@ const Games=()=>{
         };
         fetchData();
     },[]);
+    const redirectPage = (name)=>{
+     return  <Redirect to={`/games/${name}`}/>
+    }
     return( <div>
     {loading?<Loader/>:<React.Fragment>
     <Helmet><title>Popular Games</title></Helmet>
@@ -55,7 +58,7 @@ const Games=()=>{
                         gameID: game.id
                       }
                     }}
-                  > <button style={mystyle} className="learn-more">Learn More</button>
+                  > <button style={mystyle} className="learn-more" onClick={()=>redirectPage(game.name)}>Learn More</button>
                   </Link>
                 
               </div>
