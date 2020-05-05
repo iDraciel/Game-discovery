@@ -18,7 +18,7 @@ class TopOrdered extends Component {
               name: `${user.name}`,
               image: `${user.background_image}`,
               rating:`${user.rating}`,
-              slug:`${user.slug}`
+              slug:`${user.slug}`,
             }))
           )
           .then(users => {

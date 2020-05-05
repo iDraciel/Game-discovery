@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import {Helmet} from "react-helmet";
 import './AboutUs.css';
 import profilepic from '../About/dp-pastel-clipped.png';
