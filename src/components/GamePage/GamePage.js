@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactPlayer from 'react-player';
 import './GamePage.css';
 import {Helmet} from "react-helmet";
+
 const GamePage = (props) => {
     const [gameData, setGameData] = useState({
         Title: '',
@@ -49,8 +50,8 @@ const GamePage = (props) => {
             <div className="video-container">
                  <h2 className="game-text">Available in the Following stores</h2>
                 {gameData.StoreLinks.map((storeLink, i) => {
-                    return <button className="button button5" href={storeLink.url} style={{textDecoration:"none"}}  target="_blank" rel="noopener noreferrer" key={i}>
-                    {storeLink.store.name}
+                    return <button className="button button5" key={i}>
+                 <a href={storeLink.url} style={{textDecoration:"none"}}  target="_blank" rel="noopener noreferrer"> {storeLink.store.name}</a> 
                     </button>
 
                 })

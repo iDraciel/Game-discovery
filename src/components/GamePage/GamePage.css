@@ -66,9 +66,14 @@
 .button5 {
     background-color: white;
     color: black;
-  
   }
-  .button5:hover {
+  a{
+      color:black;
+  }
+  a:hover{
+      color:white;
+  }
+  .button:hover {
     background-color: #e84c3d;
     color: white;
   }
@@ -77,5 +82,8 @@
       .button{
           font-size:12px;
           padding:8px 16px;
+      }
+      a{
+          font-size: 12px;
       }
   }
