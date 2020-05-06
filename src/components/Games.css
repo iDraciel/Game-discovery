@@ -86,7 +86,7 @@
     background-color: #e84c3d; 
     border: none;
     color: white;
-    
+    border-radius: 2px;
     padding: 8px 20px;
     text-align: center;
     text-decoration: none;
@@ -101,3 +101,11 @@
   .learn-more:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+  @media screen and (max-width:768px){
+    .learn-more{
+        font-size:12px;
+        padding:8px 16px;
+        margin:2px;
+    }
+    
+}

@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReactPlayer from 'react-player';
-import './GamePage.css'
-
+import './GamePage.css';
+import {Helmet} from "react-helmet";
 const GamePage = (props) => {
     const [gameData, setGameData] = useState({
         Title: '',
         Description: '',
         StoreLinks: [],
         Trailer: '',
-        Image: ''
+        Image: '',
+      
 
     });
     useEffect(() => {
@@ -27,30 +28,35 @@ const GamePage = (props) => {
             });
      
     }, [props.match.params.id]);
-    return (
+    return ( 
+        <div>
+        <Helmet><title>{gameData.Title}</title></Helmet>
         <div className="gamePageContainer">
             <h1>{gameData.Title}</h1>
-            <img src={gameData.Image} style={{ width: "100%", height: '300px' }} alt="GameImage" />
-            
-            <p>
+            <div className="game-content">
+            <img src={gameData.Image} className="game-image" alt="GameImage" />
+            <div className="text" >
+            <p className="game-text">
                 {gameData.Description}
             </p>
+            </div>
+            </div>
               <div className="video-container">
-               <ReactPlayer width="100%" height="100%"  url={gameData.Trailer} controls />
+               <ReactPlayer playing width="100%" height='auto' url={gameData.Trailer} controls />
               </div>
              
             
-            <div className="store">
-                 <p>Available in the Following stores</p>
+            <div className="video-container">
+                 <h2 className="game-text">Available in the Following stores</h2>
                 {gameData.StoreLinks.map((storeLink, i) => {
-                    return <p key={i} >{i + 1}. {storeLink.store.name}:
-                       <a href={storeLink.url} style={{ textDecoration: 'none' }} target="_blank"
-                            rel="noopener noreferrer">Go to Store</a>
-                    </p>
+                    return <button className="button button5" href={storeLink.url} style={{textDecoration:"none"}}  target="_blank" rel="noopener noreferrer" key={i}>
+                    {storeLink.store.name}
+                    </button>
 
                 })
                 }
             </div>
+        </div>
         </div>
     );
 }

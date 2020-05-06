@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import './Games.css';
 import axios from 'axios';
-
+import {Link} from 'react-router-dom';
 class Latestrelease extends Component {
     state = {
         users: [],
@@ -16,7 +16,8 @@ class Latestrelease extends Component {
             response.data.results.map(user => ({
               name: `${user.name}`,
               image: `${user.background_image}`,
-              date:`${user.released}`
+              date:`${user.released}`,
+              slug:`${user.slug}`,
             }))
           )
           .then(users => {
@@ -44,13 +45,21 @@ class Latestrelease extends Component {
         </div>
             <div className="row">
            { users.map(user => {
-                  const { name,image,date} = user;
+                  const { name,image,date,slug} = user;
                   return (
                          <div className="column" key={name}>
                       <div className="card">
-                        <img src={image} className="image" style={{width:"300",height:"300"}} alt={name} />
+                        <img src={image} className="image" style={{width:"300",height:"300"}} alt={slug} />
                         <h6 style={{marginTop:"15px",textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap"}}>{name}</h6>
                   <p>{date}</p>
+                  <Link
+                    className="button-link"
+                    to={{
+                      pathname: "games/" + user.slug,
+                     
+                    }}
+                  > <button className="learn-more">Learn More</button>
+                  </Link>
                       </div>
                     </div>
                   );
