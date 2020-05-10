@@ -51,7 +51,7 @@ const GamePage = (props) => {
                  <h2 className="game-text">Available in the Following stores</h2>
                 {gameData.StoreLinks.map((storeLink, i) => {
                     return <a className="button button5" href={storeLink.url} style={{textDecoration:"none"}}  
-                    target="_blank" rel="noopener noreferrer" key={i}> {storeLink.store.name}</a> 
+                    target="blank" rel="noopener noreferrer" key={i}> {storeLink.store.name}</a> 
                 
 
                 })
