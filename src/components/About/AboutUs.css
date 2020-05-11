@@ -5,15 +5,21 @@ body{
 
 .wrapper{
  
-  overflow: hidden;
+    overflow: hidden;
     margin-left: auto;
-    margin-top: auto;
-    margin-top: 40px;
+    margin-right: auto;
+    max-width: 1000px;
+    height: 80vh;
 }
 .columns {
   float: left;
   width: 33.33%;
   padding: 0 10px;
+}
+
+.profile{
+  height: 200px;
+  width: 200px;
 }
 
 /* Responsive columns */
