@@ -21,7 +21,7 @@ const toolbar = props => (
                 <li> <NavLink to ="/Top-Games" >Top Games</NavLink></li>
                 <li>  <NavLink to ="/upcoming" >Upcoming Games</NavLink></li>
                     <li>  <NavLink to ="/top-streams" >Top Streams</NavLink></li>
-                    <li><NavLink to="/about-us" >About US</NavLink></li>
+                    <li><NavLink to="/about-us" >About Us</NavLink></li>
                    
                 </ul>
             </div>
