@@ -4,6 +4,7 @@ import './LiveStreams.css';
 import "bootstrap/dist/css/bootstrap.css";
 import {Helmet} from "react-helmet";
 import Loader from './UI/loader';
+import Footer from './Footer/Footer';
 const LiveStreams=()=>{
     const [streams,setStreams] =useState([]);
     const [loading,setLoading] = useState(false);
@@ -59,7 +60,9 @@ const LiveStreams=()=>{
 
         ))}
         </div>
+        <Footer />
         </React.Fragment>}
+        
       </div>
       );
   

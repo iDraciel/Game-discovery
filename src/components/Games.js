@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import {Link,Redirect} from 'react-router-dom';
 import {Helmet} from "react-helmet";
 import Loader from './UI/loader';
+import Footer from './Footer/Footer';
 
 const Games=()=>{
     const [games,setGames] =useState([]);
@@ -67,7 +68,10 @@ const Games=()=>{
         
       ))}
       </div>
-      </React.Fragment>}
+      <Footer />
+      </React.Fragment>
+      }
+     
     </div>
     );
 

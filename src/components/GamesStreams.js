@@ -3,6 +3,7 @@ import './LiveStreams.css';
 import "bootstrap/dist/css/bootstrap.css";
 import api from '../api.js';
 import {Helmet} from "react-helmet";
+import Footer from './Footer/Footer';
 
 const GameStream=({match,location})=>{
     const [streamData, setStreamData] = useState([]);
@@ -50,6 +51,7 @@ const GameStream=({match,location})=>{
         
         ))}
             </div>
+            <Footer />
     </div>);
    
 

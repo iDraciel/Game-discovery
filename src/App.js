@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
-import Footer from './components/Footer/Footer.js';
 import Games from './components/Games.js';
 import GameStream from './components/GamesStreams.js';
 import LiveStream from './components/LiveStreams.js';
@@ -57,7 +56,7 @@ class App extends Component{
       </Switch>         
     </div>
     </ScrollToTop>
-    <Footer />
+
     </Router>
 
 

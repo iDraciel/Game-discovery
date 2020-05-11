@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactPlayer from 'react-player';
 import './GamePage.css';
 import {Helmet} from "react-helmet";
+import Footer from '../Footer/Footer';
 
 const GamePage = (props) => {
     const [gameData, setGameData] = useState({
@@ -58,6 +59,7 @@ const GamePage = (props) => {
                 }
             </div>
         </div>
+        <Footer />
         </div>
     );
 }

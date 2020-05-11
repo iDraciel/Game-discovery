@@ -5,6 +5,7 @@ import axios from 'axios';
 import {Helmet} from "react-helmet";
 import Loader from './UI/loader';
 import {Link} from 'react-router-dom';
+import Footer from './Footer/Footer';
 class Crackwatch extends Component {
     state = {
         users: [],
@@ -76,6 +77,7 @@ class Crackwatch extends Component {
                 })}
             </div>
           </React.Fragment>
+          <Footer />
           </div>
         
         );
