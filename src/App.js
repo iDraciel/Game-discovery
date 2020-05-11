@@ -39,21 +39,21 @@ class App extends Component{
        <ScrollToTop>
     <div className="App">
     <div style={{height: '100%'}}>
-   <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-  <SideDrawer show={this.state.sideDrawerOpen} />
+    <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+    <SideDrawer show={this.state.sideDrawerOpen} />
     {backdrop}
      </div>
      <Switch>
-     <Route exact path='/' component={HomeComp}/>
-     <Route path='/Home' component={HomeComp}/>
-     <Route exact path='/upcoming' component={Crackwatch}/>
-     <Route exact path='/game/:id' component={GameStream} />
+      <Route exact path='/' component={HomeComp}/>
+      <Route path='/Home' component={HomeComp}/>
+      <Route exact path='/upcoming' component={Crackwatch}/>
+      <Route exact path='/game/:id' component={GameStream} />
       <Route exact path='/Top-Games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
       <Route exact path='/games/:id' component={GamePage}/>
       <Route path="*" component={ErrorPage} />
-      </Switch>         
+     </Switch>         
     </div>
     </ScrollToTop>
 

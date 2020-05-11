@@ -1,7 +1,6 @@
 .toolbar{
     top: 0;
     left: 0;
-  
     width: 100%;
     background: black;
     padding:10px;
@@ -16,6 +15,11 @@
 
 .toolbar-logo{
     margin-left: 1rem ;   
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
 }
 
 .spacer{
@@ -53,6 +57,11 @@
     .toolbar-navigation-items {
         display: none;
     }
+
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (min-width: 769px){
@@ -63,4 +72,5 @@
     .toolbar-logo{
         margin-left: 0;
     }
+
 }

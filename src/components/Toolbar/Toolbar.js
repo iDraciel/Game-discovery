@@ -2,7 +2,7 @@ import React from 'react';
 
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
-import logo from "../Toolbar/esportsLogo.png";
+import logo from "../Toolbar/Logo.png";
 
 import './Toolbar.css';
 import "bootstrap/dist/css/bootstrap.css";

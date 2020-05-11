@@ -1,15 +1,18 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import {Helmet} from "react-helmet";
-import './AboutUs.css';
-import profilepic from '../About/dp-pastel-clipped.png';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faTwitter,
     faGithub
   } from "@fortawesome/free-brands-svg-icons";
-  import Footer from '../Footer/Footer';
-  import Puru from './Purushottam.png';
-  import Akhil from './Akhil.png';
+
+import Abraz from '../About/Abraz.png';
+import Puru from './Purushottam.png';
+import Akhil from './Akhil.png';
+
+import './AboutUs.css';
+import Footer from '../Footer/Footer';
 
 const aboutUs = () => (<div>
     <Helmet><title>About Us</title></Helmet>
@@ -44,10 +47,10 @@ const aboutUs = () => (<div>
             </div>
              <div className="columns">
             <div className="card">
-                <img src = {profilepic} className="profile" alt="profile"></img>
+                <img src = {Abraz} className="profile" alt="profile"></img>
                 <h1 className="nameheading">Abraz</h1>
                 <h2 className="infoheading">UI/UX Designer</h2>
-                <h2 className="infoheading"><a href="https://twitter.com/callmeabraz" className="twitter social">
+                <h2 className="infoheading"><a href="https://twitter.com/callmeabraz" target="blank" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>  
       <a href="https://github.com/callmeabraz" target="blank" className="github social">
