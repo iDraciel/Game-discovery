@@ -5,7 +5,7 @@ const Footer =() =>{
     return(<div>
          <footer className="footer">
   <div className="footer-container">
-    <img src={Play} className="footer-pic"/>
+    <img src={Play} alt="footer-pic" className="footer-pic"/>
     <div className="footer-para">
     <p className="first-para" >GameSpaceX.com is a website about PC and Console games that shows updates, streams, and news about games. Check out the latest update of upcoming AAA games and live streams.
   Legal notice: GameSpaceX.com does NOT host any pirated or illegal content, does NOT provide links to any pirated or illegal sites.

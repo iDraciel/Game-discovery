@@ -28,7 +28,7 @@ const GameStream=({match,location})=>{
         setStreamData(finalArray);
       };
       fetchData();
-    },);
+    },[]);
     return( <div>
       <Helmet><title>{match.params.id}</title></Helmet>
       <h1>{match.params.id} Top Streams</h1>
