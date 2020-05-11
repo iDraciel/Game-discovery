@@ -2,66 +2,106 @@
 
 
 .footer{
-    background-color: black;
-      overflow-x: hidden;
+    background-color: #434343;
+    overflow-x: hidden;
   }
-  
-  .footer-container{
-  bottom:0;
+    
+  .footer-logo-container{
+    margin: 2rem;
     display:flex;
-    background-color: black;
+    align-items: center;
+
   }
   
   .footer-pic{
-    margin-top: 10px;
-    width:200px;
-    height:auto;
-    margin-left: 15px;
+    margin-left: 3rem;
+    width: 54px;
+    height: 54px;
   }
   
-  .footer-para{
-    display:grid;
-    width:calc(100% - 80px);
-    color:white;
-    margin-top: 60px;
-    margin-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-    height:auto;
-    font-size: 16px;
-    font-weight: 500;
+  .foogter-logo-name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-left: 1rem;
   }
+
+  .footer-info{
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+
+    text-transform: capitalize;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+  }
+
+/*Footer Navigation*/
+
+  .footer-navigation-items{
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+
+  .footer-navigation-items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+  .footer-navigation-items li{
+      padding:  0.5rem 3rem 0.5rem 0;
+  }
+
+  .footer-navigation-items a{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    color: #999696;
+    text-decoration: none;
+  }
+
+  .footer-navigation-items a:hover,
+  .footer-navigation-items a:active{
+      color:#e84c3d;
+      text-decoration:none ;
+  }
+
+
+/*Footer Notice*/
+
+.footer-rights{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+    display: flex;
+}
+
+.spacer{
+  flex: 1;
+}
+
+
+  .footer-notice{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    text-transform: capitalize;
+
+    color: #999696;
+  }
+
+
   
-  .footer-rights{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-      height:auto;
-      text-align:center;
-      align-items: center;
-      font-size: 16px;
-      font-weight: 500;
-  }
   
-  @media screen and (max-width:720px){
-    .footer-container{
-      display:grid;
-    }
-    .footer-pic{
-      width:150px;
-     height:auto;
-   position:relative;
-   left:26%;
-   margin-bottom: 0;
-   padding-bottom: 0;
-    }
-    .footer-para{
-      margin-top:6px;
-        margin-left:20px;
-        margin-right: 20px;
-      width:calc(100% - 40px);
-      font-size: 10px;
-    }
-    .footer-rights{
-      margin-top:2px;
-      font-size:11px;
-    }
-  }
+
+
