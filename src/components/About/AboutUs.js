@@ -13,7 +13,7 @@ import {
 
 const aboutUs = () => (<div>
     <Helmet><title>About Us</title></Helmet>
-    <body className="wrapper">
+    <div className="wrapper">
         <div className="row">
             <div className="columns">
             <div className="card">
@@ -47,7 +47,7 @@ const aboutUs = () => (<div>
                 <img src = {profilepic} className="profile" alt="profile"></img>
                 <h1 className="nameheading">Abraz</h1>
                 <h2 className="infoheading">UI/UX Designer</h2>
-                <h2 className="infoheading"><a href="https://www.twitter.com/" className="twitter social">
+                <h2 className="infoheading"><a href="https://twitter.com/callmeabraz" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>  
       <a href="https://github.com/callmeabraz" target="blank" className="github social">
@@ -56,7 +56,7 @@ const aboutUs = () => (<div>
             </div>
             </div>
         </div>
-    </body>
+    </div>
     <Footer />
     </div>
 );
