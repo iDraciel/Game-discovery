@@ -1,8 +1,10 @@
-
+body {
+  overflow-x: hidden;
+}
 
 
 .footer{
-    background-color: #434343;
+    background-color: black;
     overflow-x: hidden;
   }
     
