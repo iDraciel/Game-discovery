@@ -11,6 +11,7 @@
 }
 @media screen and (max-width:768px){
     .slide-image{
-        height:130px;
+          margin-top: 10px;
+        height:180px;
     }
 }
