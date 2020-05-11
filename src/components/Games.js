@@ -18,7 +18,7 @@ const Games=()=>{
             setLoading(true);
             const result = await api.get('https://api.twitch.tv/helix/games/top')
             
-           // console.log(result.data);
+           //console.log(result.data);
            let dataArray = result.data.data
           let finalArray = dataArray.map(game=>{
                let newURL = game.box_art_url 
@@ -38,8 +38,8 @@ const Games=()=>{
     }
     return( <div>
     {loading?<Loader/>:<React.Fragment>
-    <Helmet><title>Popular Games</title></Helmet>
-      <h1>Most Popular Games</h1>
+    <Helmet><title>Top Games</title></Helmet>
+      <h1>Top Streaming Games</h1>
       <div className="live-update">
         <div className="inner">
         </div>
@@ -49,9 +49,8 @@ const Games=()=>{
       {games.map(game =>(
        
           <div className="column" key={game.id}>
-              <div className="card">
-              <img className="image" alt={game.box_art_url} src={game.box_art_url} />
-                  <Link
+              <div className="card" onClick={()=>redirectPage(game.name)}>
+              <Link
                     className="button-link"
                     to={{
                       pathname: "game/" + game.name,
@@ -59,10 +58,12 @@ const Games=()=>{
                         gameID: game.id
                       }
                     }}
-                  > <button style={mystyle} className="learn-more" onClick={()=>redirectPage(game.name)}>Learn More</button>
-                  </Link>
+                  >
+              <img className="image" alt={game.box_art_url} src={game.box_art_url} />
+                   </Link>
                 
               </div>
+            
               </div>
        
         

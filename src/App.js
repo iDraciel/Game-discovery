@@ -48,7 +48,7 @@ class App extends Component{
      <Route path='/Home' component={HomeComp}/>
      <Route exact path='/upcoming' component={Crackwatch}/>
      <Route exact path='/game/:id' component={GameStream} />
-      <Route exact path='/Popular-games' component={Games}/>
+      <Route exact path='/Top-Games' component={Games}/>
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
       <Route exact path='/games/:id' component={GamePage}/>

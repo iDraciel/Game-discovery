@@ -7,6 +7,7 @@ import Footer from './Footer/Footer';
 
 const GameStream=({match,location})=>{
     const [streamData, setStreamData] = useState([]);
+    const [viewers, setViewers] = useState(0);
     useEffect(() => {
       const fetchData = async () => {
         const result = await api.get(
@@ -20,13 +21,23 @@ const GameStream=({match,location})=>{
           stream.thumbnail_url = newURL;
           return stream;
         });
+        let totalViewers = finalArray.reduce((acc, val) => {
+          return acc + val.viewer_count;
+        }, 0);
+        setViewers(totalViewers);
         setStreamData(finalArray);
       };
       fetchData();
     },);
     return( <div>
       <Helmet><title>{match.params.id}</title></Helmet>
-      <h1>{match.params.id} Streams</h1>
+      <h1>{match.params.id} Top Streams</h1>
+      <h1> <span style={{color:"#e84c3d"}}>{viewers}</span> Watching Live</h1>
+      <div className="live-update">
+        <div className="inner">
+        </div>
+        <h6 className="header-6">Live Updates</h6>
+        </div>
             <div className="row">
             {streamData.map(stream => (
             

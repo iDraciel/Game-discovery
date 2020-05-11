@@ -18,7 +18,7 @@ const toolbar = props => (
             <div className="spacer" />
             <div className="toolbar-navigation-items">
                 <ul>
-                <li> <NavLink to ="/Popular-games" >Popular Games</NavLink></li>
+                <li> <NavLink to ="/Top-Games" >Top Games</NavLink></li>
                 <li>  <NavLink to ="/upcoming" >Upcoming Games</NavLink></li>
                     <li>  <NavLink to ="/top-streams" >Top Streams</NavLink></li>
                     <li><NavLink to="/about-us" >About US</NavLink></li>
