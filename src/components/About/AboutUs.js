@@ -15,11 +15,13 @@ import './AboutUs.css';
 import Footer from '../Footer/Footer';
 
 const aboutUs = () => (<div>
-    <Helmet><title>About Us</title></Helmet>
+    <Helmet><title>About</title></Helmet>
     <div className="wrapper">
+        <div className= "about-info">
 
+        </div>
 
-        <div className="row">
+        {/* <div className="row">
 
             <div className="columns">
               <div className="card">
@@ -62,7 +64,7 @@ const aboutUs = () => (<div>
                   </a></h2>
                         </div>
                 </div>
-            </div>
+            </div> */}
 
     </div>
 
