@@ -83,9 +83,9 @@ const aboutUs = () => (<div>
             <div className="profile-card-right">
               <h2 className="profile-name">Akhil Raj</h2>
               <p>
-              Hi, I am a UI/UX Designer from Bangalore. I am currently a student of Game and Mobile Application Development.<br></br>
-              I have worked as a Graphic Designer for more than two years with a reputed Advertising firm.<br></br>
-              Currently honing my skills in UI/UX and learning Web Development.
+              Hi, I am a Web Developer and a Computer Science Graduate.<br></br>
+              I have worked as an Intern at an Amazon seed funded startup called Emvoke Technologies which is into Health sector.<br></br>
+              Currently in the pursuit of learning and excelling in Web Development.
               </p>
 
               <div className="profile-right-buttons">
