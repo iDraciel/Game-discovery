@@ -37,7 +37,7 @@ class TopOrdered extends Component {
         const { users } = this.state;
         return (
           <React.Fragment>
-            <h1>Top Ordered Games</h1>
+            <h1 style={{marginTop:"22px"}}>Top Ordered Games</h1>
             
             <div className="live-update">
         <div className="inner">

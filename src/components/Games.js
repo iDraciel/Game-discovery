@@ -39,7 +39,7 @@ const Games=()=>{
     return( <div>
     {loading?<Loader/>:<React.Fragment>
     <Helmet><title>Top Games</title></Helmet>
-      <h1 style={{marginTop:"60px"}}>Top Streaming Games</h1>
+      <h1>Top Streaming Games</h1>
       <div className="live-update">
         <div className="inner">
         </div>

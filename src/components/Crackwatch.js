@@ -46,7 +46,7 @@ class Crackwatch extends Component {
           <div>
           <Helmet><title>Upcoming Games</title></Helmet>
           <React.Fragment>
-            <h1 style={{marginTop:"60px"}}>Upcoming Games</h1>
+            <h1>Upcoming Games</h1>
             
             <div className="live-update">
         <div className="inner">

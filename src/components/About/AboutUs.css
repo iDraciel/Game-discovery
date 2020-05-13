@@ -130,3 +130,38 @@ p{
 .github-button a:hover{
   color: #000000;
 }
+
+@media screen and (max-width:768px){
+  .profile-card{
+    display:grid;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(100% - 8px);
+    height:auto;
+  }
+  .profile-card-left{
+    margin-right: 0rem;
+  }
+  .profile{
+    position: relative;
+    left: calc(50% - 5rem);
+  }
+  .profile-card-right{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .profile-name{
+    text-align: center;
+  }
+  .profile-right-buttons{
+    display:flex;
+  }
+  .twitter-button{
+    width:100px;
+    height:auto;
+  }
+  .github-button{
+    width: 100px;
+    height: auto;
+  }
+}

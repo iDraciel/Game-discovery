@@ -19,8 +19,8 @@ const aboutUs = () => (<div>
     <div className="wrapper">
 
         <div className= "about-info-heading">
-            <h1 className="about-main-heading">We are an Aggregation Platform for Games and Esports</h1>
-            <h2 className="about-main-info">The vision in building this platform has been to help peeps like you to get into esports and gaming.</h2>
+            <h1 className="about-main-heading">We are an Aggregation Platform for Games and Streaming</h1>
+            <h2 className="about-main-info">The vision in building this platform has been to help peeps like you to get into Streaming and gaming.</h2>
             <h2 className="about-main-info">We help you in:</h2>
             <h2 className="about-main-info">-> How to Start</h2>
             <h2 className="about-main-info">-> Where to Start</h2>
@@ -28,18 +28,18 @@ const aboutUs = () => (<div>
         </div>
 
         <div className="  ">
-          <h2 className="about-main-info">What is Esports you ask?</h2>
+          <h2 className="about-main-info">What is Video game live streaming ?</h2>
           <p>
-            Esports (also known as electronic sports, e-sports, or eSports) is a form of sport competition using video games.<br></br>
-            Esports often takes the form of organized, multiplayer video game competitions, particularly between professional players, individually or as teams.
+          Live streaming is an activity where people record themselves playing games to a live audience online.<br></br>
+          The practice became popular in the mid-2010s on sites such as Twitch and later, YouTube, Facebook and other services. By 2014, Twitch streams had more traffic than HBO's online service
           </p>
 
           <div className="spacer-about"></div>
 
           <h2 className="about-main-info">How does GameSpaceX help you ask?</h2>
           <p>
-          The platform is designed and built in such a way that we are at the forefront in showing you new game releases and the best streams on Esports.<br></br>
-          We also help you explore the gaming world. Think of us as the yellow pages of Gaming and Esports.
+          The platform is designed and built in such a way that we are at the forefront in showing you new game releases and the best streams on Twitch.<br></br>
+          We also help you explore the gaming world. Think of us as the yellow pages of Gaming and Streaming.
           </p>
         </div>
 
@@ -111,9 +111,9 @@ const aboutUs = () => (<div>
             <div className="profile-card-right">
               <h2 className="profile-name">Purushottam</h2>
               <p>
-              Hi, I am a UI/UX Designer from Bangalore. I am currently a student of Game and Mobile Application Development.<br></br>
-              I have worked as a Graphic Designer for more than two years with a reputed Advertising firm.<br></br>
-              Currently honing my skills in UI/UX and learning Web Development.
+              Hi, I am a Web Developer. I am currently an undergrad pursuing a Bachelor in Mathematics.<br></br>
+              I have a huge interest in Esports and been following it closely.<br></br>
+              Currently sharpening my skills in Web Development and learning App Development.
               </p>
 
               <div className="profile-right-buttons">

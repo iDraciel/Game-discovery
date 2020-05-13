@@ -32,7 +32,7 @@ const GameStream=({match,location})=>{
     },[]);
     return( <div>
       <Helmet><title>{match.params.id}</title></Helmet>
-      <h1 style={{marginTop:"60px"}}>{match.params.id} Top Streams</h1>
+      <h1>{match.params.id} Top Streams</h1>
       <h1> <span style={{color:"#e84c3d"}}>{viewers}</span> Watching Live</h1>
       <div className="live-update">
         <div className="inner">

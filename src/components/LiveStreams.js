@@ -31,7 +31,7 @@ const LiveStreams=()=>{
       {loading?<Loader/>:
       <React.Fragment>
       <Helmet><title>Top Streams</title></Helmet>
-        <h1 style={{marginTop:"60px"}}>Top Live Streams</h1>
+        <h1>Top Live Streams</h1>
         <div className="live-update">
         <div className="inner">
         </div>
