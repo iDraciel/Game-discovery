@@ -6,18 +6,18 @@ body {
 .footer{
     background-color: black;
     overflow-x: hidden;
-    margin-top: 2em;
+    margin-top: 3rem;
+    padding: 3rem;
   }
     
   .footer-logo-container{
-    margin: 2rem;
+    margin-bottom: 2rem;
     display:flex;
     align-items: center;
 
   }
   
   .footer-pic{
-    margin-left: 3rem;
     width: 54px;
     height: 54px;
   }
@@ -32,7 +32,6 @@ body {
   }
 
   .footer-info{
-    margin-left: 5rem;
     margin-bottom: 1rem;
     font-weight: 600;
     font-size: 20px;
@@ -46,7 +45,6 @@ body {
 /*Footer Navigation*/
 
   .footer-navigation-items{
-    margin-left: 5rem;
     margin-top: 2rem;
   }
 
@@ -80,7 +78,6 @@ body {
 /*Footer Notice*/
 
 .footer-rights{
-    margin-left: 5rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
     margin-right: 5rem;
@@ -106,8 +103,11 @@ body {
 
 
   @media (max-width: 768px) {
+    .footer{
+      padding: 1rem;
+    }
+
     .footer-pic{
-      margin-left: 1rem;
       width: 35px;
       height: 35px;
     }
@@ -118,7 +118,6 @@ body {
     }
 
     .footer-info{
-      margin-left: 3rem;
       margin-right: 3rem;
       margin-bottom: 1rem;
       font-weight: 300;
@@ -126,7 +125,6 @@ body {
     }
 
     .footer-navigation-items{
-      margin-left: 3rem;
       margin-right: 3rem;
       margin-top: 1rem;
     }
@@ -143,7 +141,6 @@ body {
     }
 
     .footer-rights{
-      margin-left: 3rem;
       margin-top: 2rem;
       margin-bottom: 3rem;
       margin-right: 3rem;
