@@ -13,6 +13,7 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import './App.css';
 import GamePage from './components/GamePage/GamePage';
 import Crackwatch from './components/Crackwatch';
+import Terms from './components/PrivacyPolicy/Terms';
 
 class App extends Component{
   state = {
@@ -52,6 +53,7 @@ class App extends Component{
       <Route exact path='/top-Streams' component={LiveStream}/>
       <Route exact path='/about-us' component={AboutUs} />
       <Route exact path='/games/:id' component={GamePage}/>
+      <Route exact path='/terms-and-conditions' component={Terms}/>
       <Route path="*" component={ErrorPage} />
      </Switch>         
     </div>
