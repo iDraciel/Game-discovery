@@ -18,7 +18,7 @@ const privacypolicy = () => (
         <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
         <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
         <p>GameSpaceX.com is a website about PC and Console games that shows updates, streams, and news about games.Check out the latest update of upcoming AAA games and live streams.</p>
-        <p><strong>Legal Notice:</strong> GameSpaceX.com does NOT host any pirated or illegal content, does NOT provide links to any pirated or illegal sites.
+        <p><strong>Legal Notice:</strong>   GameSpaceX.com does NOT host any pirated or illegal content, does NOT provide links to any pirated or illegal sites.
             GameSpaceX uses Pictures and Videos from Twitch and Rawg.io. Copyrights are owned by those providers and can be removed upon official request
             GameSpaceX is solemnly an informational website that provides updates on mostly PC games and view watch of games.
             GameSpaceX encourages users to purchase games from market and at least one purchase link on each game page is provided.</p>
