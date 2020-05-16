@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: none;
+}

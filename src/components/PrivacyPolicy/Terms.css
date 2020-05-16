@@ -1,0 +1,42 @@
+.terms-wrapper{
+    width: 1200px;
+    padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tc-h1{
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.tc-h2{
+    text-align: left;
+    font-weight: 400;
+    color: white;
+}
+
+ul{
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .terms-wrapper{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tc-h2{
+        font-size: 22px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+
+    ul{
+        font-size: 14px;
+    }
+}

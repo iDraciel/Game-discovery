@@ -21,9 +21,9 @@ const Footer =() =>{
           <div className="footer-navigation-items">
               <ul>
 
-                <li><NavLink to="/about-us" >About Us</NavLink></li>
-                <li><a href="/">Privacy Policy</a></li>
-                <li><a href="/">Terms and Conditions</a></li>
+                <li><NavLink to="/about-us" >About</NavLink></li>
+                <li><NavLink to="/privacy-policy" >Privacy Policy</NavLink></li>
+                <li><NavLink to="/terms-and-conditions" >Terms and Conditions</NavLink></li>
                    
               </ul>
           </div>
