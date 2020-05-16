@@ -17,6 +17,7 @@ import Crackwatch from './components/Crackwatch';
 class App extends Component{
   state = {
     sideDrawerOpen: false,
+  
   }
   drawerToggleClickHandler = () => {
           this.setState((prevState) => {

@@ -8,15 +8,17 @@ const sideDrawer = props => {
     let drawerClasses = 'side-drawer';
     if (props.show) {
         drawerClasses = 'side-drawer open';
+       
     }
+    
 
   return(
     <nav className={drawerClasses}>
         <ul>
-        <li> <Link to ="/Top-Games">Top Games</Link></li>
+        <li > <Link to ="/Top-Games">Top Games</Link></li>
           <li>  <Link to ="/top-streams">Top Streams</Link></li>
           <li>  <Link to ="/upcoming">Upcoming Games</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/about-us">About</Link></li>
         </ul>
     </nav>
   );
