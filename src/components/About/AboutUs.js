@@ -84,7 +84,7 @@ const aboutUs = () => (<div>
               <h2 className="profile-name">Akhil Raj</h2>
               <p>
               Hi, I am a Web Developer and a Computer Science Graduate.<br></br>
-              I have worked as an Intern at an Amazon seed funded startup called Emvoke Technologies which is into Health sector.<br></br>
+              I have worked as an Intern at an  startup called Emvoke Technologies .<br></br>
               Currently in the pursuit of learning and excelling in Web Development.
               </p>
 
