@@ -22,10 +22,10 @@ code {
     top: 0%;
 }
 .intro {
- position: absolute;
- top:50%;
- left:36%;
- transform: (-50%,50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   font-size: 4rem;
@@ -82,7 +82,9 @@ code {
   }
   .intro{
     position: absolute;
-    left:34%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 22px;
   }
 }

@@ -111,7 +111,7 @@ const aboutUs = () => (<div>
             <div className="profile-card-right">
               <h2 className="profile-name">Purushottam</h2>
               <p>
-              Hi, I am a Web Developer. I am currently an undergrad pursuing a Bachelor in Mathematics.<br></br>
+              Hi, I am a Web Developer. I have worked as an intern at a startup named Scholarpanda which is into the Education sector.<br></br>
               I have a huge interest in Esports and been following it closely.<br></br>
               Currently sharpening my skills in Web Development and learning App Development.
               </p>

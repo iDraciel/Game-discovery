@@ -13,6 +13,9 @@
 .side-drawer.open {
     transform: translateY(0);
 }
+.side-drawer.close{
+    transform: translateY(-110%);
+}
 
 .side-drawer ul{
     margin-top: 20px;
@@ -31,11 +34,13 @@
     text-decoration: none;
     font-size: 1.2rem;
 }
-
+.side-drawer a:active{
+    border-bottom: 2px solid #e84c3d;
+}
 .side-drawer li a:hover,
-.side-drawer a:active,
 .side-drawer a.active{
     color: #e84c3d;
+
 }
 
 
