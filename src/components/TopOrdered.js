@@ -37,7 +37,7 @@ class TopOrdered extends Component {
         const { users } = this.state;
         return (
           <React.Fragment>
-            <h1 style={{marginTop:"22px"}}>Top Ordered Games</h1>
+            <h1 style={{marginTop:"22px",fontWeight:'bolder'}}>Top Ordered Games</h1>
             
             <div className="live-update">
         <div className="inner">
@@ -51,7 +51,7 @@ class TopOrdered extends Component {
                          <div className="column" key={name}>
                       <div className="card">
                         <img src={image} className="image" style={{width:"300",height:"300"}} alt={slug} />
-                        <h6 style={{marginTop:"15px",textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap"}}>{name}</h6>
+                        <h6 style={{marginTop:"15px",textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap",fontWeight:'bold'}}>{name}</h6>
                         <p>rating - {rating}</p>
                       <Link
                     className="button-link"
