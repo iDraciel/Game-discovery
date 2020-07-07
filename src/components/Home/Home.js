@@ -25,8 +25,8 @@ class Home extends Component{
             <Slider {...settings}>
                <div className="slide">
                  
-                 <img className="slide-image" src={JS4} alt="slide1"/>
-                 
+              <a href="https://www.producthunt.com/posts/gamespacex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-gamespacex" target="blank"><img className="slide-image" src={JS4} alt="slide1"/>
+              </a>  
                </div>
                <div className="slide">
                 

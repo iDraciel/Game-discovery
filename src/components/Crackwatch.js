@@ -15,7 +15,7 @@ class Crackwatch extends Component {
       getUsers() {
         this.setState({loading:true});
         axios
-          .get(`https://api.rawg.io/api/games?dates=2020-05-05,2021-12-31`)
+          .get(`https://cors-anywhere.herokuapp.com/https://api.rawg.io/api/games?dates=2020-05-05,2021-12-31`)
           .then(response =>{
              
            return response.data.results.map(user => ({

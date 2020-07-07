@@ -11,7 +11,7 @@ class Latestrelease extends Component {
     
       getUsers() {
         axios
-          .get(`https://api.rawg.io/api/games?dates=2020-04-01,2020-04-30&platforms=18,1,7`)
+          .get(`https://cors-anywhere.herokuapp.com/https://api.rawg.io/api/games?dates=2020-04-01,2020-04-30&platforms=18,1,7`)
           .then(response =>
             response.data.results.map(user => ({
               name: `${user.name}`,
